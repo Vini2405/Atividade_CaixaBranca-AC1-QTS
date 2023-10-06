@@ -24,3 +24,13 @@ Fazendo uma análise minuciosa do código, é valido ressaltar os pontos a segui
 - **Arquitetura:** Não é possível ao certo dizer qual foi a arquitetura usada no desenvolvimento desse código, pois ela não está muito bem explícita e definida, o que evidencia novamente a má organização da aplicação em geral.
 
 - **Conexões:** As conexões com a base de dados não são tão bem realizadas, uma vez que a senha e o login ficam explícitas no código, além de que, não são fechadas corretamente, o que deixa o sistema vulnerável a possíveis vazamentos de dados. Portanto, seria bom utilizar métodos eficazes para tratar o BD com o código em si, gerando assim, uma segurança maior para com os dados coletados.
+
+## Grafo de Fluxo
+
+![Grafo de Fluxo](grafodefluxo.png)
+
+Para descobrir a complexidade e, consequentemente, os possíveis caminhos, foi efetuada a seguinte conta:
+
+- **M = 8 - 7 + 2 * 1**
+- **M = 1 + 2**
+- **M = 3**
