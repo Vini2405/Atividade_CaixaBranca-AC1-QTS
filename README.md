@@ -34,3 +34,19 @@ Como dito anteriormente, a classe `User()`, possui os seguintes métodos/variáv
 - `verificarUsuario(String login, String senha)`: Método que verifica as credenciais, ou seja, o login e a senha do usuário, consultando diretamente o banco de dados;
 - `nome`: Variável que receberá como valor, o nome do usuário;
 - `result`: Variável que receberá como valor, o resultado da autenticação, ou seja, terá como valores, **verdadeiro** para sucesso e **falso** para falha. 
+
+### **Como usar:**
+
+A classe `User()`, basicamente, pode ser usada para gerar uma conexão com o banco de dados MySQL, verificando o nome do usuário e a senha definida. Vejamos um exemplo a seguir:
+
+```java
+public static void main(String[] args) {
+    User user = new User();
+		
+    System.out.println(user.conectarBD());
+		
+    String login = "admin";
+    String senha = "123456";
+		
+    System.out.println(user.verificarUsuario(login, senha));
+}
